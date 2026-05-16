@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Template Responsivo com Barra Retrátil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="import" href="scrypt.js">
+</head>
+<body>
+  <div class="topbar-wrap" id="topbarWrap" aria-hidden="false">
+    <div class="topbar" id="topbar" role="banner">
+      <div class="title">Barra Superior Vermelha</div>
+      <div class="extra" id="topbarExtra">
+        <div class="small">Informações adicionais, links ou avisos podem aparecer aqui.</div>
+      </div>
+      <button class="toggle-btn" id="toggleBtn" aria-expanded="false" aria-controls="topbar">Menu</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="grid" aria-label="Conteúdo principal">
+      <div class="a" id="divA">
+        <div class="card-title">Div A — maior</div>
+        <p>Conteúdo principal, destaque ou artigo. Esta divisão ocupa mais colunas no grid.</p>
+      </div>
+
+      <aside class="b" id="divB">
+        <div class="card-title">Div B — alta</div>
+        <p>Barra lateral com widgets, anúncios ou informações complementares.</p>
+      </aside>
+
+      <div class="c" id="divC">
+        <div class="card-title">Div C — média</div>
+        <p>Seção secundária com conteúdo relacionado.</p>
+      </div>
+
+      <div class="d" id="divD">
+        <div class="card-title">Div D — pequena</div>
+        <p>Pequeno bloco para ações rápidas ou resumo.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
